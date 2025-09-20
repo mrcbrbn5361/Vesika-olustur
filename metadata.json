@@ -1,0 +1,5 @@
+{
+  "name": "AI Passport Photo Generator",
+  "description": "An application that allows users to upload a photo and generate multiple professional passport-style photos with appropriate attire and background using the Gemini API.",
+  "requestFramePermissions": []
+}
