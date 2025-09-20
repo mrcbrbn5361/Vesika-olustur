@@ -13,10 +13,10 @@ const GenerationControls: React.FC<GenerationControlsProps> = ({ onSubmit, isLoa
       <button
         onClick={onSubmit}
         disabled={!isReady || isLoading}
-        className="flex items-center justify-center w-full bg-violet-600 text-white font-bold py-3 px-4 rounded-lg
-                   hover:bg-violet-700 transition-all duration-200
-                   disabled:bg-slate-700 disabled:text-slate-400 disabled:cursor-not-allowed
-                   focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-900 focus:ring-violet-500"
+        className="flex items-center justify-center w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold py-3 px-4 rounded-lg
+                   hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105
+                   disabled:from-slate-700 disabled:to-slate-700 disabled:text-slate-400 disabled:cursor-not-allowed disabled:scale-100
+                   focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-900 focus:ring-blue-500"
       >
         {isLoading ? (
           <>

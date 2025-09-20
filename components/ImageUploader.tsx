@@ -1,4 +1,3 @@
-
 import React, { useState, useCallback } from 'react';
 import { UploadIcon } from './icons/UploadIcon';
 
@@ -59,7 +58,7 @@ const ImageUploader: React.FC<ImageUploaderProps> = ({ onImageUpload, imagePrevi
   const uploaderClasses = `
     relative flex flex-col items-center justify-center w-full h-64
     border-2 border-dashed rounded-lg cursor-pointer transition-colors duration-200
-    ${isDragging ? 'border-violet-400 bg-violet-900/30' : 'border-slate-600 bg-slate-800 hover:bg-slate-700/50 hover:border-slate-500'}
+    ${isDragging ? 'border-blue-400 bg-blue-900/30' : 'border-slate-600 bg-slate-800 hover:bg-slate-700/50 hover:border-slate-500'}
   `;
 
   return (
@@ -71,7 +70,7 @@ const ImageUploader: React.FC<ImageUploaderProps> = ({ onImageUpload, imagePrevi
             className="absolute inset-0 bg-black/70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
           >
              <label htmlFor="file-upload" className="flex flex-col items-center text-center p-4 cursor-pointer">
-                <UploadIcon className="w-10 h-10 mb-2 text-violet-300" />
+                <UploadIcon className="w-10 h-10 mb-2 text-blue-300" />
                 <span className="font-semibold text-lg">Change Photo</span>
                 <span className="text-sm text-slate-300">Click or drag a new image here</span>
              </label>
